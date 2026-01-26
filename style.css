@@ -319,10 +319,12 @@ p {
 .footer {
   padding: 4rem;
   background-color: var(--beige-soft);
+  text-align: center;
 }
 
 .footer a {
   color: var(--sage-dark);
+  text-align: center;
   text-decoration: none;
   margin-right: 1rem;
 }
@@ -332,6 +334,7 @@ p {
 }
 
 .footer p {
+  text-align: center;
   margin-top: 1rem;
 }
 
