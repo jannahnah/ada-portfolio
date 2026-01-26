@@ -3,96 +3,181 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jannah Loraine L. Ada | Portfolio</title>
+  <title>Jannah Loraine Ada | Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a> |
-    <a href="#projects">Projects</a> |
-    <a href="#learning">Currently Learning</a>
-  </nav>
+  <!-- ================= HEADER / NAV ================= -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">
+        <span>Jannah Ada</span>
+      </div>
 
-  <!-- Hero Section -->
-  <header>
-    <h1>Jannah Loraine L. Ada</h1>
-    <p>
-      I am Jannah Loraine L. Ada, an IT student with hands-on experience in systems,
-      networking, databases, and web development, using technologies such as
-      C++, Python, HTML, CSS, JavaScript, MySQL, and Figma.
-    </p>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am passionate about building practical systems and web projects that solve real-world problems. 
-      I am continuously improving my skills in full-stack development and database management.
-    </p>
-  </section>
+  <main>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Jannah Loraine L. Ada</h1>
 
-    <div class="project">
-      <h3>POS System (VB.NET)</h3>
-      <p><strong>Category:</strong> What I Know</p>
+        <p class="hero-role">
+          UI/UX Enthusiast
+        </p>
+
+        <p class="hero-description">
+          I design intuitive and user-centered interfaces with a focus on clarity,
+          accessibility, and long-term usability.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn secondary">Contact Me</a>
+          <a href="#about" class="btn outline">About Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+  <div class="image-wrapper">
+    <img src="assets/profile.jpg" alt="Portrait of Jannah Loraine Ada">
+  </div>
+</div>
+
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="services">
+      <h2>What I Do</h2>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <h3>UI Design</h3>
+          <p>
+            I create clean and visually balanced user interfaces that prioritize
+            clarity, consistency, and ease of navigation.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>UX Thinking</h3>
+          <p>
+            I focus on user-centered design by understanding user needs,
+            mapping user flows, and reducing friction in digital experiences.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>System-Oriented Design</h3>
+          <p>
+            I design interfaces with scalability in mind, ensuring they remain usable
+            even as systems grow or tools evolve.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= STATS / HIGHLIGHTS ================= -->
+    <section class="stats">
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <h3>3</h3>
+          <p>Years of Experience</p>
+        </div>
+
+        <div class="stat-item">
+          <h3>10+</h3>
+          <p>Technologies Used</p>
+        </div>
+
+        <div class="stat-item">
+          <h3>CDMP</h3>
+          <p>Certification</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="projects">
+      <h2>Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <h3>Pawsitivity (Web Design)</h3>
+          <p>
+            A web-based project that spreads awareness about adopting
+            and showing compassion for stray animals.
+          </p>
+          <span class="tech-stack">
+            Figma (Low-Fidelity Design), Google Slides (Final Output)
+          </span>
+        </article>
+
+        <article class="project-card">
+          <h3>POS System (Admin / Cashier Database System)</h3>
+          <p>
+            A simple CRUD-based database system designed to manage
+            products, users, and transactions efficiently.
+          </p>
+          <span class="tech-stack">
+            VB.NET, MySQL, Python, VS Code
+          </span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
       <p>
-        A Point-of-Sale system developed using VB.NET that handles transactions
-        and basic system operations, demonstrating my understanding of desktop application development.
+        I am an IT student and UI/UX enthusiast with experience in designing
+        user-friendly systems and interfaces. I value strong fundamentals,
+        thoughtful design decisions, and continuous learning.
       </p>
-    </div>
+    </section>
 
-    <div class="project">
-      <h3>Admin & Cashier Kiosk Database System</h3>
-      <p><strong>Category:</strong> What I Learned</p>
-      <p>
-        A kiosk-style database system featuring role-based login for Admin and Cashier users. 
-        This project challenged me to connect the front-end and back-end using MySQL, 
-        helping me understand data flow and integration.
+    <!-- ================= TESTIMONIAL / QUOTE ================= -->
+    <section class="quote">
+      <blockquote>
+        “I build systems with the assumption that tools will change,
+        but fundamentals—clarity, security, and usability—should not.”
+      </blockquote>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="contact" class="footer">
+      <h2>Get in Touch</h2>
+
+      <p>Email: <a href="mailto:jannahsnow13@gmail.com">jannahsnow13@gmail.com</a></p>
+
+      <div class="social-links">
+        <a href="https://github.com/jannahnah" target="_blank">GitHub</a>
+        <a href="https://www.facebook.com/jannahsnow13" target="_blank">Facebook</a>
+      </div>
+
+      <p class="copyright">
+        © 2026 Jannah Loraine Ada
       </p>
-    </div>
+    </footer>
 
-    <div class="project">
-      <h3>Pawsitivity</h3>
-      <img src="images/pawsitivity.png" alt="Pawsitivity Screenshot" class="project-img" />
-      <p><strong>Category:</strong> What I’m Aspiring to Do</p>
-      <p>
-        A web advocacy project promoting love and care for stray animals, created using Google Sites.
-        This reflects my interest in meaningful web applications and motivates me to create advanced full-stack systems.
-      </p>
-    </div>
-  </section>
-
-  <!-- Currently Learning Section -->
-  <section id="learning">
-    <h2>Currently Learning</h2>
-    <ul>
-      <li>Full-stack web development</li>
-      <li>Connecting front-end and back-end systems</li>
-      <li>MySQL database optimization</li>
-      <li>Git & GitHub workflow</li>
-      <li>Vercel deployment</li>
-      <li>UI design with Figma</li>
-    </ul>
-  </section>
-
-  <footer>
-  <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:jannahsnow13@gmail.com">jannahsnow13@gmail.com</a>
-  </p>
-  <p>
-    GitHub: <a href="https://github.com/jannahnah" target="_blank">
-      github.com/jannahnah
-    </a>
-  </p>
-  <p>© 2026 Jannah Loraine L. Ada</p>
-</footer>
+  </main>
 
 </body>
 </html>
