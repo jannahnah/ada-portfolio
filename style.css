@@ -38,6 +38,25 @@
   --sage-dark: #9bd3b7;
 }
 
+body.dark .contact {
+  background: #1f1f1f;
+}
+
+body.dark .contact-form {
+  background: #2a2a2a;
+}
+
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+  background: #333;
+  color: #eee;
+}
+
+body.dark .contact-form input::placeholder,
+body.dark .contact-form textarea::placeholder {
+  color: #aaa;
+}
+
 /* ===============================
    GLOBAL RESET
    =============================== */
@@ -391,6 +410,77 @@ body,
   margin-top: 1rem;
 }
 
+.contact {
+  padding: 5rem 1.5rem;
+  background: var(--beige-soft);
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-form {
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: #f7f5f1;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid var(--lavender);
+  box-shadow: 0 0 0 4px rgba(168, 157, 235, 0.15);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    var(--green-soft),
+    var(--lavender)
+  );
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact-form button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
 /* ===============================
    RESPONSIVE
    =============================== */
@@ -522,5 +612,11 @@ body {
   .btn {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 2rem 1.5rem;
   }
 }

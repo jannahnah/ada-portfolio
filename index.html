@@ -7,6 +7,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
 </head>
 <body>
 
@@ -174,6 +176,13 @@
     <!-- ================= FOOTER ================= -->
     <footer id="contact" class="footer">
       <h2>Get in Touch</h2>
+      
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
 
       <p>Email: <a href="mailto:jannahsnow13@gmail.com">jannahsnow13@gmail.com</a></p>
 

@@ -39,3 +39,28 @@ document.querySelectorAll(".nav-links a").forEach(link => {
     navLinks.classList.remove("active");
   });
 });
+
+(function () {
+  emailjs.init("b35iWx15IQhtsmF_p");
+})();
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "Jannah Loraine Ada",
+    "template_ID",
+    this
+  )
+  .then(() => {
+    alert("Message sent successfully!");
+    form.reset();
+  })
+  .catch((error) => {
+    alert("Failed to send message.");
+    console.error(error);
+  });
+});
+
