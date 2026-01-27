@@ -21,6 +21,22 @@
   --border-radius: 12px;
   --transition: 0.3s ease;
 }
+/* ===============================
+   DARK THEME
+   =============================== */
+
+[data-theme="dark"] {
+  --beige: #1c1c1e;
+  --beige-soft: #2a2a2d;
+  --text-dark: #f1f1f1;
+  --text-muted: #b5b5b5;
+
+  --lavender: #9d8ccf;
+  --lavender-dark: #cfc6f1;
+
+  --sage: #7fae9a;
+  --sage-dark: #9bd3b7;
+}
 
 /* ===============================
    GLOBAL RESET
@@ -103,6 +119,43 @@ p {
 
 .nav-links a:hover {
   color: var(--sage-dark);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--lavender-dark);
+}
+
+.theme-toggle {
+  background: transparent;
+  border: 2px solid var(--lavender);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--lavender-dark);
+  transition: all var(--transition);
+}
+
+.theme-toggle:hover {
+  background-color: var(--lavender);
+  color: white;
+}
+
+body,
+.site-header,
+.services,
+.projects,
+.stats,
+.footer,
+.about,
+.quote {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ===============================
@@ -351,9 +404,36 @@ p {
   .hero-buttons {
     justify-content: center;
   }
+}
 
+  @media (max-width: 900px) {
+  .nav {
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+  
   .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--beige-soft);
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
     display: none;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
   }
 }
 
