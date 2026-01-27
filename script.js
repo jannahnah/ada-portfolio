@@ -1,3 +1,5 @@
+console.log("Script loaded");
+
 const toggleBtn = document.getElementById("theme-toggle");
 const root = document.documentElement;
 const navToggle = document.getElementById("nav-toggle");
@@ -29,6 +31,7 @@ if (!navLinks || !navToggle) {
 }
 
 navToggle.addEventListener("click", () => {
+    console.log("Hamburger clicked");
   navLinks.classList.toggle("active");
   navToggle.textContent = navLinks.classList.contains("active") ? "✕" : "☰";
 });
